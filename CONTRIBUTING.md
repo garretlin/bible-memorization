@@ -1,7 +1,5 @@
 # Contributing to bible memorization
 
-We would love for you to contribute to README Template and help make it even better than it is today! As a contributor, here are the guidelines we would like you to follow:
-
 - [Contributing to bible memorization](#contributing-to-bible-memorization)
   - [Getting Started](#getting-started)
   - [Pulls Requests](#pulls-requests)
@@ -38,7 +36,7 @@ Follow these steps and guidelines when starting with a PR:
 
         Example :pencil2: :
         ```
-        $ git commit -am 'Adding Details in Deployment Section'
+        $ git commit -am 'Fixing sum ting wong'
         ```
     * Push to the branch in the forked repository
         
