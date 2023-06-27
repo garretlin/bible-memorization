@@ -1,13 +1,8 @@
 # Contributing to bible memorization
 
 - [Contributing to bible memorization](#contributing-to-bible-memorization)
-  - [Getting Started](#getting-started)
   - [Pulls Requests](#pulls-requests)
   - [Submitting a Pull Request](#submitting-a-pull-request)
-
-## Getting Started
-
-Start by **starring** the repo or [forking](https://github.com/garretlin/bible-memorization/fork) it.
 
 ## Pulls Requests
 
