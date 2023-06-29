@@ -1,12 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
+import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet, Text, View } from 'react-native';
-import { LandingView } from './views/LandingView'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { MyVersesView } from './views/MyVersesView';
+import { QuizView } from './views/QuizView';
+import { VerseReviewView } from './views/VerseReviewView';
 
 export default function App() {
+  const Tab = createBottomTabNavigator();
+
   return (
-    <View style={styles.container}>
-      <LandingView />
-    </View>
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name="My Verses" component={MyVersesView} />
+        <Tab.Screen name="Quiz Me" component={QuizView} />
+        <Tab.Screen name="Verse Review" component={VerseReviewView} />
+      </Tab.Navigator>
+    </NavigationContainer>
   );
 }
 
