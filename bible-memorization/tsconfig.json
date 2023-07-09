@@ -1,6 +1,14 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    // path alias config
+    "baseUrl": ".",
+    "paths": {
+      // This needs to be mirrored in babel.config.js
+      // Views is a directory with sub directories
+      "views/*": ["src/views/*"],
+      "src/*": ["src/*"]
+    }
   }
 }

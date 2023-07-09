@@ -1,9 +1,8 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { MyVersesView } from './views/MyVersesView';
-import { QuizView } from './views/QuizView';
-import { VerseReviewView } from './views/VerseReviewView';
+import { MyVersesView } from 'views/MyVersesView';
+import { QuizView } from 'views/QuizView';
+import { VerseReviewView } from 'views/VerseReviewView';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 export default function App() {
@@ -37,12 +36,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
