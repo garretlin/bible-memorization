@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MyVersesView } from './views/MyVersesView';
 import { QuizView } from './views/QuizView';
 import { VerseReviewView } from './views/VerseReviewView';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 export default function App() {
   const Tab = createBottomTabNavigator();
@@ -11,9 +12,27 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name="My Verses" component={MyVersesView} />
-        <Tab.Screen name="Quiz Me" component={QuizView} />
-        <Tab.Screen name="Verse Review" component={VerseReviewView} />
+        <Tab.Screen name="My Verses" component={MyVersesView} 
+        options={{
+          tabBarLabel: 'My Verses',
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="book-open-page-variant" color={color} size={size} />
+          ),
+        }}/>
+        <Tab.Screen name="Quiz Me" component={QuizView} 
+        options={{
+          tabBarLabel: 'Quiz Me',
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="check-bold" color={color} size={size} />
+          ),
+        }}/>
+        <Tab.Screen name="Verse Review" component={VerseReviewView} 
+        options={{
+          tabBarLabel: 'message-draw',
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="home" color={color} size={size} />
+          ),
+        }}/>
       </Tab.Navigator>
     </NavigationContainer>
   );
